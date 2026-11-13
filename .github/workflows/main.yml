@@ -1,0 +1,14 @@
+name: Test de Bienvenida
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprimir mensaje de inicio
+        run: echo "Iniciando pruebas automaticas del repositorio..."
+      - name: Verificar archivos
+        run: ls -la
